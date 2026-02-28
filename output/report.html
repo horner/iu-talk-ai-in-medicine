@@ -1,0 +1,145 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><title>GLP-1 Report</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1a1a1a}
+table{border-collapse:collapse;width:100%;margin:16px 0}th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}
+th{background:#f5f5f5;font-weight:600}img{max-width:100%;height:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin:12px 0}
+pre{background:#f5f5f5;padding:16px;border-radius:6px;overflow-x:auto;font-size:12px}
+code{background:#f0f0f0;padding:2px 6px;border-radius:3px;font-size:13px}
+blockquote{border-left:4px solid #2563eb;margin:16px 0;padding:8px 16px;background:#f8fafc}
+h1{color:#1e3a5f;border-bottom:2px solid #2563eb;padding-bottom:8px}
+h2{color:#2563eb;margin-top:32px}h3{color:#444}
+hr{border:none;border-top:1px solid #ddd;margin:32px 0}
+li{margin:4px 0}
+</style></head><body>
+<h1>GLP-1 Clinical Trials Analysis Report</h1>
+<p><em>Generated 2026-02-28 13:12 — Data from ClinicalTrials.gov API v2</em></p>
+<h2>Executive Summary</h2>
+<p>This analysis covers <strong>4,593</strong> unique clinical trials related to GLP-1 receptor agonists and related therapies, posted between <strong>2000</strong> and <strong>2026</strong>.</p>
+<li>**92** trials already posted in 2026 (year in progress)</li>
+<li>**475** trials posted in 2025 — the highest completed year</li>
+<li>**986** trials currently active or recruiting</li>
+<li>**2894** trials completed</li>
+<li>**8** distinct drug mechanism classes identified</li>
+<h2>Data Quality</h2>
+<p>The cleaning step identified the following issues in the raw data:</p>
+<table>
+<tr><th>Issue Category</th><th>Count</th></tr>
+<tr><td>Total issues</td><td>1187</td></tr>
+<tr><td>Drug names listed as conditions</td><td>187</td></tr>
+<tr><td>Encoding issues fixed</td><td>272</td></tr>
+<tr><td>Empty conditions</td><td>0</td></tr>
+<tr><td>Empty interventions</td><td>173</td></tr>
+<tr><td>Missing phase</td><td>555</td></tr>
+<tr><td>Missing status</td><td>0</td></tr>
+</table>
+<p><em>See <code>data/qa_report.txt</code> for full details.</em></p>
+<h2>Trial Status</h2>
+<table>
+<tr><th>Status</th><th>Count</th><th>% of Total</th></tr>
+<tr><td>Completed</td><td>2,894</td><td>63.0%</td></tr>
+<tr><td>Recruiting</td><td>527</td><td>11.5%</td></tr>
+<tr><td>Unknown</td><td>441</td><td>9.6%</td></tr>
+<tr><td>Not Yet Recruiting</td><td>232</td><td>5.1%</td></tr>
+<tr><td>Active Not Recruiting</td><td>186</td><td>4.0%</td></tr>
+<tr><td>Terminated</td><td>170</td><td>3.7%</td></tr>
+<tr><td>Withdrawn</td><td>90</td><td>2.0%</td></tr>
+<tr><td>Enrolling By Invitation</td><td>41</td><td>0.9%</td></tr>
+<tr><td>Suspended</td><td>12</td><td>0.3%</td></tr>
+</table>
+<h2>Phase Distribution</h2>
+<p><em>Showing 2,492 trials with a defined phase. 2,101 trials excluded (NA = non-drug interventional, Not Specified = missing phase data).</em></p>
+<table>
+<tr><th>Phase</th><th>Count</th><th>% of Phased Trials</th></tr>
+<tr><td>Phase 3</td><td>650</td><td>26.1%</td></tr>
+<tr><td>Phase 4</td><td>567</td><td>22.8%</td></tr>
+<tr><td>Phase 1</td><td>540</td><td>21.7%</td></tr>
+<tr><td>Phase 2</td><td>522</td><td>20.9%</td></tr>
+<tr><td>Phase 1 / Phase 2</td><td>84</td><td>3.4%</td></tr>
+<tr><td>Phase 2 / Phase 3</td><td>69</td><td>2.8%</td></tr>
+<tr><td>Early Phase 1</td><td>60</td><td>2.4%</td></tr>
+</table>
+<h2>Drug Mechanism Classes</h2>
+<table>
+<tr><th>Mechanism Class</th><th>Count</th><th>% of Total</th></tr>
+<tr><td>Other/Unknown</td><td>2,439</td><td>53.1%</td></tr>
+<tr><td>GLP-1 RA</td><td>1,435</td><td>31.2%</td></tr>
+<tr><td>GLP-1 Related (unspecified)</td><td>505</td><td>11.0%</td></tr>
+<tr><td>GIP/GLP-1 Dual</td><td>192</td><td>4.2%</td></tr>
+<tr><td>GLP-1/Glucagon Dual</td><td>13</td><td>0.3%</td></tr>
+<tr><td>Triple Agonist</td><td>4</td><td>0.1%</td></tr>
+<tr><td>Oral GLP-1 RA</td><td>4</td><td>0.1%</td></tr>
+<tr><td>Amylin/GLP-1</td><td>1</td><td>0.0%</td></tr>
+</table>
+<h2>Therapy Type</h2>
+<table>
+<tr><th>Therapy Type</th><th>Count</th></tr>
+<tr><td>Non-drug</td><td>1,680</td></tr>
+<tr><td>Combination</td><td>1,394</td></tr>
+<tr><td>Monotherapy</td><td>846</td></tr>
+<tr><td>Unknown</td><td>673</td></tr>
+</table>
+<h2>Sponsor Types</h2>
+<table>
+<tr><th>Sponsor Class</th><th>Count</th></tr>
+<tr><td>Other</td><td>2,955</td></tr>
+<tr><td>Industry</td><td>1,497</td></tr>
+<tr><td>Other Gov</td><td>78</td></tr>
+<tr><td>Nih</td><td>27</td></tr>
+<tr><td>Fed</td><td>25</td></tr>
+<tr><td>Network</td><td>7</td></tr>
+<tr><td>Indiv</td><td>4</td></tr>
+</table>
+<h2>Top Conditions</h2>
+<table>
+<tr><th>Condition</th><th>Broad Category</th><th>Trial Count</th></tr>
+<tr><td>Type 2 Diabetes</td><td>Metabolic / Diabetes</td><td>1595</td></tr>
+<tr><td>Obesity / Overweight</td><td>Obesity / Weight</td><td>1301</td></tr>
+<tr><td>Diabetes Mellitus</td><td>Metabolic / Diabetes</td><td>463</td></tr>
+<tr><td>Type 1 Diabetes</td><td>Metabolic / Diabetes</td><td>428</td></tr>
+<tr><td>Healthy Volunteers</td><td>Other</td><td>275</td></tr>
+<tr><td>Cardiovascular Disease</td><td>Cardiovascular</td><td>217</td></tr>
+<tr><td>Metabolic Syndrome / Prediabetes</td><td>Metabolic / Diabetes</td><td>209</td></tr>
+<tr><td>NASH / NAFLD</td><td>NASH / Liver</td><td>141</td></tr>
+<tr><td>Kidney / Renal Disease</td><td>Kidney / Renal</td><td>109</td></tr>
+<tr><td>Hypoglycemia</td><td>Metabolic / Diabetes</td><td>109</td></tr>
+<tr><td>Cancer</td><td>Cancer</td><td>99</td></tr>
+<tr><td>Inflammation / Autoimmune</td><td>Other</td><td>65</td></tr>
+<tr><td>Substance Use / Addiction</td><td>Other</td><td>60</td></tr>
+<tr><td>PCOS</td><td>Other</td><td>50</td></tr>
+<tr><td>Unknown</td><td>Other</td><td>50</td></tr>
+<tr><td>GI / Gastroparesis</td><td>Other</td><td>49</td></tr>
+<tr><td>Neurological / Cognitive</td><td>Neurological</td><td>45</td></tr>
+<tr><td>Dyslipidemia</td><td>Cardiovascular</td><td>43</td></tr>
+<tr><td>Glucose Metabolism Disorders</td><td>Other</td><td>32</td></tr>
+<tr><td>Hypertension</td><td>Cardiovascular</td><td>25</td></tr>
+</table>
+<h2>Charts</h2>
+<h3>Trials Posted Per Year</h3>
+<img src="charts/trials_per_year.png" alt="Trials Posted Per Year">
+<h3>Phase Distribution</h3>
+<img src="charts/phase_distribution.png" alt="Phase Distribution">
+<h3>Phase Distribution by Year</h3>
+<img src="charts/phase_by_year.png" alt="Phase Distribution by Year">
+<h3>Drug Mechanism Class Distribution</h3>
+<img src="charts/drug_class_distribution.png" alt="Drug Mechanism Class Distribution">
+<h3>Top Conditions (Donut Chart)</h3>
+<img src="charts/condition_wheel.png" alt="Top Conditions (Donut Chart)">
+<h3>Trial Status Distribution</h3>
+<img src="charts/status_distribution.png" alt="Trial Status Distribution">
+<h3>Sponsor Types</h3>
+<img src="charts/sponsor_types.png" alt="Sponsor Types">
+<h2>Notable Finding: The Pistachio Study</h2>
+<p>Among all the GLP-1 clinical trials, one stood out:</p>
+<blockquote><strong>Pistachio Intake and Nutrition-Related Outcomes in Individuals on GLP-1 Therapy</strong><br></blockquote>
+<blockquote>NCT ID: NCT07244445 | Status: RECRUITING | Phase: NA<br></blockquote>
+<p>As the video creator noted: participants will eat 53 grams (¾ cup) of pistachios per day while on GLP-1 therapy.</p>
+<h2>Methodology</h2>
+<p>1. <strong>Data Fetch</strong>: Queried ClinicalTrials.gov API v2 with 11 GLP-1-related search terms, paginated, and deduplicated by NCT ID</p>
+<p>2. <strong>Cleaning</strong>: Unicode normalization, condition splitting, drug-as-condition flagging, year extraction</p>
+<p>3. <strong>Classification</strong>: Mapped interventions to mechanism classes (GLP-1 RA, GIP/GLP-1 Dual, Triple Agonist, etc.) and therapy types</p>
+<p>4. <strong>Condition Analysis</strong>: Normalized condition variants, mapped to broad therapeutic categories</p>
+<p>5. <strong>Visualization</strong>: Generated 7 publication-quality charts</p>
+<p>6. <strong>Report</strong>: This document</p>
+<hr>
+<p><em>Pipeline: <code>01_fetch_trials.py</code> → <code>02_clean_data.py</code> → <code>03_classify_mechanisms.py</code> → <code>04_analyze_conditions.py</code> → <code>05_visualize.py</code> → <code>06_report.py</code></em></p>
+</body></html>

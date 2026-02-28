@@ -1,0 +1,20 @@
+# Extracted video frames (reproducible via ffmpeg)
+frames/
+
+# Playwright / browser screenshots (generated during review)
+report_full_page.png
+report_final.png
+.playwright-mcp/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
