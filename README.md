@@ -1,5 +1,7 @@
 # GLP-1 Clinical Trial Analysis Pipeline
 
+[How this repo as made video](https://github.com/horner/iu-talk-ai-in-medicine)
+
 Replicating and extending a clinical trial analysis of **GLP-1 receptor agonists** originally presented in [this video](Video%20by%20jackiebrenner.mp4) by Jackie Brenner.
 
 The original video walked through pulling GLP-1 trials from ClinicalTrials.gov, cleaning messy data, and exploring the results in spreadsheets. This project reproduces the full analysis programmatically — from raw API calls to publication-quality charts and an automated report.
